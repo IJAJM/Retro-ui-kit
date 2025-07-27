@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro UI Kit</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    
+    body {
+      font-family: 'Courier New', monospace;
+      background: repeating-linear-gradient(
+        -45deg,
+        #f1e7d5,
+        #f1e7d5 10px,
+        #e8dcc9 10px,
+        #e8dcc9 20px
+      );
+    }
+    .retro-shadow {
+      box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+      transition: all 0.2s ease;
+    }
+    .retro-shadow:active {
+      box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+      transform: translate(2px, 2px);
+    }
+    .retro-input {
+      border: 2px solid #d4d4d4;
+      background: #fff;
+      font-family: 'Courier New', monospace;
+    }
+    .retro-input:focus {
+      outline: none;
+      border-color: #f87171;
+      background: #fff9f9;
+    }
+    .retro-title {
+      font-family: 'Press Start 2P', cursive;
+      text-shadow: 3px 3px 0 #fecaca;
+      letter-spacing: 1px;
+    }
+    .retro-scroll::-webkit-scrollbar {
+      height: 8px;
+      background: #e5e5e5;
+    }
+    .retro-scroll::-webkit-scrollbar-thumb {
+      background: #f87171;
+      border-radius: 4px;
+    }
+    .cp-watermark {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(241, 231, 213, 0.7);
+      padding: 4px 8px;
+      border: 2px dashed #f87171;
+      font-size: 12px;
+      font-weight: bold;
+      color: #ef4444;
+    }
+  </style>
+</head>
+
+<body class="text-gray-800 py-10 px-4">
+  <!-- Credit Designer Watermark -->
+  <div class="cp-watermark retro-shadow">
+    CP DESIGNER: IJAJKEY
+  </div>
+
+  <!-- FORM -->
+  <div class="max-w-xl mx-auto mb-12">
+    <div class="mb-4 flex items-center gap-2">
+      <input type="text" placeholder="IJAJKEY" class="retro-input px-3 py-2 w-full font-bold tracking-wider">
+      <button class="bg-red-500 text-white px-3 py-2 retro-shadow hover:bg-red-600">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+    <h2 class="retro-title text-4xl text-center mb-6">FORM</h2>
+    <div class="bg-white p-4 retro-shadow rounded border-2 border-gray-300">
+      <input type="text" placeholder="NAME" class="retro-input px-3 py-2 mb-3 w-full font-medium">
+      <div class="flex justify-between mb-3">
+        <input type="email" placeholder="EMAIL ADDRESS" class="retro-input px-3 py-2 w-3/4 font-medium">
+        <button class="bg-red-500 text-white px-4 ml-2 retro-shadow hover:bg-red-600">
+          <i class="fas fa-times mr-1"></i> OH NO
+        </button>
+      </div>
+      <textarea rows="4" placeholder="MESSAGE" class="retro-input px-3 py-2 w-full mb-3 font-medium"></textarea>
+      <div class="flex gap-2 justify-center">
+        <button class="bg-red-500 rounded-full w-8 h-8 retro-shadow hover:bg-red-600 flex items-center justify-center">
+          <i class="fas fa-circle text-xs"></i>
+        </button>
+        <button class="bg-red-500 w-8 h-8 retro-shadow hover:bg-red-600 flex items-center justify-center">
+          <i class="fas fa-stop text-xs"></i>
+        </button>
+        <button class="bg-red-500 w-8 h-8 retro-shadow hover:bg-red-600 flex items-center justify-center">
+          <i class="fas fa-check"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE -->
+  <div class="max-w-xl mx-auto mb-12">
+    <h2 class="retro-title text-4xl text-center mb-6">SLIDE</h2>
+    <div class="bg-white p-4 retro-shadow rounded border-2 border-gray-300 space-y-6">
+      <input type="range" class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-red-500">
+      
+      <input type="range" class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-red-500">
+      
+      <div class="flex items-center gap-4">
+        <span class="text-xl">🔈</span>
+        <input type="range" class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-red-500">
+        <span class="font-bold text-red-500">80%</span>
+      </div>
+      
+      <input type="range" class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-red-500">
+    </div>
+  </div>
+
+  <!-- PRESS -->
+  <div class="max-w-xl mx-auto mb-12">
+    <h2 class="retro-title text-4xl text-center mb-6">PRESS</h2>
+    <div class="bg-white p-4 retro-shadow rounded border-2 border-gray-300 space-y-6">
+      <div class="grid grid-cols-3 gap-3">
+        <button class="bg-yellow-400 retro-shadow px-4 py-3 hover:bg-yellow-500 font-bold tracking-wider">BUTTON</button>
+        <button class="bg-green-400 retro-shadow px-4 py-3 hover:bg-green-500 font-bold tracking-wider">BUTTON</button>
+        <button class="bg-blue-300 retro-shadow px-4 py-3 hover:bg-blue-400 font-bold tracking-wider">BUTTON</button>
+        <button class="bg-yellow-500 retro-shadow px-4 py-3 hover:bg-yellow-600 font-bold tracking-wider">BUTTON</button>
+        <button class="bg-green-500 retro-shadow px-4 py-3 hover:bg-green-600 font-bold tracking-wider">BUTTON</button>
+        <button class="bg-blue-400 retro-shadow px-4 py-3 hover:bg-blue-500 font-bold tracking-wider">BUTTON</button>
+      </div>
+      <div class="flex gap-2 justify-center flex-wrap">
+        <button class="bg-red-500 px-4 py-3 retro-shadow hover:bg-red-600">
+          <i class="fas fa-cog"></i>
+        </button>
+        <button class="bg-red-500 px-4 py-3 retro-shadow hover:bg-red-600">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button class="bg-red-500 px-4 py-3 retro-shadow hover:bg-red-600">
+          <i class="fas fa-tv"></i>
+        </button>
+        <button class="bg-red-500 px-4 py-3 retro-shadow hover:bg-red-600">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button class="bg-red-500 px-4 py-3 retro-shadow hover:bg-red-600">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <button class="bg-red-500 px-4 py-3 retro-shadow hover:bg-red-600">
+          <i class="fas fa-power-off"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCROLL -->
+  <div class="max-w-xl mx-auto mb-12">
+    <h2 class="retro-title text-4xl text-center mb-6">SCROLL</h2>
+    <div class="bg-white p-4 retro-shadow rounded border-2 border-gray-300 space-y-6">
+      <div class="overflow-x-auto retro-scroll">
+        <div class="w-[600px] h-6 bg-gray-200 rounded-full">
+          <div class="w-24 h-full bg-red-500 rounded-full"></div>
+        </div>
+      </div>
+      <div class="flex items-center overflow-x-auto retro-scroll">
+        <div class="w-6 h-6 bg-red-500 rounded-l-full"></div>
+        <div class="flex-1 h-6 bg-gray-200">
+          <div class="w-24 h-full bg-red-500 mx-auto"></div>
+        </div>
+        <div class="w-6 h-6 bg-red-500 rounded-r-full"></div>
+      </div>
+      <div class="overflow-x-auto retro-scroll">
+        <div class="w-[400px] h-6 bg-gray-200 rounded-full">
+          <div class="w-20 h-full bg-red-500 mx-auto rounded-full"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
